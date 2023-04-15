@@ -3,7 +3,13 @@ Este projeto foi feito para o desafio da CapGov. Trata-se de um CRUD feito em Ja
 
 # ❓Instruções
 
-1 > É necessário ter um banco de dados chamado crudagendamento;
+- A versão do JDK utilizada neste projeto é o jdk1.8;
+- É necessário ter um banco de dados chamado crudagendamento;
+- Este projeto foi criado utilizando a IDE NetBeans 8.2, aconselha-se utiliza-lá para que funcione corretamente;
+  - Link de Dowwnload da IDE: https://netbeans-ide.informer.com/download/
+- Configurar os arquivos persistence.xml e hibernate.cfg.xml com as informações de conexão do seu banco;
+- Configurar a conexão do banco de dados com o NetBeans;
+- Utilizar o servidor Glassfish 4.4.1 para rodar;
 
 # 💻 Technologies
 - HTML;
