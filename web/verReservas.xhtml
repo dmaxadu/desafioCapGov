@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <h:head>
+        <title>Consultar Reservas</title>
+    </h:head>
+    <h:body style="display: flex; justify-content: space-around; align-items: center;">
+        <div style="display: flex; justify-content: center; align-items: center; min-height: 100vh; flex-direction: column">
+            <h:form style="height: 50%; width: 75%">
+                <p:dataTable var="item" value="#{agendamentoBean.lista}" style="text-align: center">
+                    <p:column headerText="ID">
+                        <h:outputText value="#{item.id}" />
+                    </p:column>
+                    <p:column headerText="Nome">
+                        <h:outputText value="#{item.nome}" />
+                    </p:column>
+                    <p:column headerText="CPF">
+                        <h:outputText value="#{item.cpf}" />
+                    </p:column>
+                    <p:column headerText="Data">
+                        <h:outputText value="#{item.ts}" />
+                    </p:column>
+                    <p:column headerText="Observações">
+                        <h:outputText value="#{item.obs}" />
+                    </p:column>
+                    <p:column headerText="Número de Pessoas">
+                        <h:outputText value="#{item.numPessoas}" />
+                    </p:column>
+                    <p:column headerText="Excluir/Editar">
+                        <p:commandButton action="#{agendamentoBean.deletar}" icon="ui-icon-trash" title="Apagar reserva" oncomplete="location.reload()">
+                            <f:setPropertyActionListener target="#{agendamentoBean.id}" value="#{item.id}"/>
+                        </p:commandButton>
+                        <p:button outcome="updateReserva" icon="ui-icon-pencil">
+                            <f:param name="id" value="#{item.id}"/>
+                        </p:button>
+                    </p:column>
+                </p:dataTable>
+            </h:form>
+            <p:button outcome="index" value="Home" icon="ui-icon-home" style="margin: 5px"></p:button>
+        </div>
+    </h:body>
+</html>

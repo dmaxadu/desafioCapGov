@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center;
+    background-image: url(https://static.vecteezy.com/ti/fotos-gratis/p3/1948406-tampo-da-mesa-de-madeira-para-exibicao-com-fundo-desfocado-do-restaurante-gratis-foto.jpg);
+    background-size: cover;
+}
+
+.title {
+    padding: 0px 35px 0px 35px;
+    color: #ca8a04;
+    text-align: center;
+    line-height: 15px;
+    text-shadow: 4px 4px 4px rgba(0,0,0,0.32);
+}
+
+.container {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    flex-direction: column;
+    background-color: rgba(228, 228, 231, 0.50);
+    height: 50vh; 
+    margin-top: 20vh; 
+    padding: 0px 30px 0px 30px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 25px 1px rgba(0,0,0,0.53);
+}
+
+.buttonsContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.criarButton {
+    transition: all ease 0.3s;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.criarButton:hover {
+    transform: scale(1.05);
+    background-color: #ca8a04;
+    color: white;
+    border-color: black;
+}
+
+.verButton {
+    transition: all ease 0.3s;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.verButton:hover {
+    transform: scale(1.05);
+    background-color: #ca8a04;
+    color: white;
+    border-color: black;
+}

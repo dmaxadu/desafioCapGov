@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+
+    <h:head>
+        <title>Criar Reserva</title>
+    </h:head>
+    <h:body style="display: flex; justify-content: space-around; align-items: center;">
+        <div style="display: flex; justify-content: center; align-items: center; min-height: 100vh; flex-direction: column">
+            <p:panel header="Atualizar Reserva">
+                <h:form style="height: 50%; display: flex; align-items: center; flex-direction: column">
+                    <h:outputText id="msg" value="#{agendamentoBean.resultado}" style="margin-bottom: 20px; color: green"/>
+                    <p:panelGrid columns="2">
+                        <h:outputLabel for="ID" value="ID:" />
+                        <p:inputText id="ID" value="#{agendamentoBean.id}" required="true" requiredMessage="Você precisa preencher!"/>
+                        
+                        <h:outputLabel for="nome" value="Nome:" />
+                        <p:inputText id="nome" value="#{agendamentoBean.nome}" />
+
+                        <h:outputLabel for="cpf" value="CPF" />
+                        <p:inputMask id="cpf" value="#{agendamentoBean.cpf}" mask="999.999.999-99"/>
+
+                        <h:outputLabel for="obs" value="Observações" />
+                        <p:inputTextarea id="obs" value="#{agendamentoBean.obs}" rows="6" cols="23"/>
+
+                        <p:outputLabel for="datetime" value="Data e Hora: " />
+                        <p:calendar id="datetime" value="#{agendamentoBean.ts}" pattern="dd/MM/yyyy HH:mm:ss" />
+
+                        <h:outputLabel for="numPessoas" value="Número de Pessoas" />
+                        <p:inputText id="numPessoas" value="#{agendamentoBean.numPessoas}" />
+                    </p:panelGrid>
+                    <p:commandButton type="submit" value="Atualizar Reserva" action="#{agendamentoBean.atualizar()}" update="msg" style="margin-top: 15px" />
+                </h:form>
+            </p:panel>
+            <div style="margin-top: 25px">
+                <p:button outcome="index" value="Home" icon="ui-icon-home"></p:button>
+                <p:button outcome="verReservas" value="Consultar Reservas" icon="ui-icon-note" style="margin: 5px"></p:button>
+            </div>
+        </div>
+    </h:body>
+</html>
