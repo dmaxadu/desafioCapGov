@@ -1,4 +1,4 @@
-# 📑 About the Project
+# 📑 Sobre o Projeto
 Este projeto foi feito para o desafio da CapGov. Trata-se de um CRUD feito em Java utilizando as bibliotecas Hibernate e Primefaces.
 
 # ❓Instruções
