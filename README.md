@@ -13,7 +13,7 @@ Este projeto foi feito para o desafio da CapGov. Trata-se de um CRUD feito em Ja
 
 # 🖼️ Imagens
 
-<img src="https://imgur.com/nuyC0Ox">
+![Página Inicial](https://imgur.com/nuyC0Ox)
 
 # 💻 Technologies
 - HTML;
