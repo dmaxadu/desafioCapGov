@@ -11,6 +11,10 @@ Este projeto foi feito para o desafio da CapGov. Trata-se de um CRUD feito em Ja
 - Configurar a conexão do banco de dados com o NetBeans;
 - Utilizar o servidor Glassfish 4.4.1 para rodar;
 
+# 🖼️ Imagens
+
+<img src="https://imgur.com/nuyC0Ox">
+
 # 💻 Technologies
 - HTML;
 - CSS;
