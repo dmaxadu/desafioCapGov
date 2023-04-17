@@ -1,5 +1,5 @@
 # 📑 Sobre o Projeto
-Este projeto foi feito para o desafio da CapGov. Trata-se de um CRUD feito em Java utilizando as bibliotecas Hibernate e Primefaces. No contexto do projeto, trata-se de um sistema operado por uma espécie de secretária que é responsável por criar e gerenciar as reservas de um restaurante. Como ela é a única usuária do sistema não é necessário ter login para acessá-lo.
+Este projeto foi feito para o desafio do CapGov. Trata-se de um CRUD feito em Java utilizando as bibliotecas Hibernate e Primefaces. No contexto do projeto, trata-se de um sistema operado por uma espécie de secretária que é responsável por criar e gerenciar as reservas de um restaurante. Como ela é a única usuária do sistema não é necessário ter login para acessá-lo.
 
 # ❓Instruções
 
