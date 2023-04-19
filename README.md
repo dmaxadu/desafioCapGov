@@ -16,11 +16,11 @@ Este projeto foi feito para o desafio do CapGov. Trata-se de um CRUD feito em Ja
 
 ![Página Inicial](https://i.imgur.com/nuyC0Ox.png)
 
-# 💻 Technologies
+# 💻 Tecnologias
 - HTML;
 - CSS;
 - Java;
 
-# ✅ Status of the Project
+# ✅ Status do Projeto
 
 <h4 align="center">🚀 Done...  🚀</h4>
